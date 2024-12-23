@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <EditText
+        android:id="@+id/TenantNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên người thuê"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/StartDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Ngày thuê (YYYY-MM-DD)"
+        android:inputType="date" />
+    <EditText
+        android:id="@+id/RentMonthsInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Số tháng thuê"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/RoomPriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá phòng"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/ElectricityPriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá điện"
+        android:inputType="numberDecimal"/>
+    <EditText android:id="@+id/WaterPriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá nước"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/ServicePriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá dịch vụ"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/CaptureContractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chụp ảnh hợp đồng"/>
+    <ImageView
+        android:id="@+id/ContractImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"/>
+    <Button
+        android:id="@+id/RentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cho thuê"/>
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

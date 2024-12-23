@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/RoomName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:text="Phòng 101" />
+
+    <TextView
+        android:id="@+id/TenantName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:text="Nguyễn Văn A"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Đã thu"
+        android:layout_margin="8dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/PaymentButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_margin="8dp"
+        android:text="Thu tiền" />
+
+    <Button
+        android:id="@+id/DetailButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_margin="8dp"
+        android:text="Chi tiết"
+        android:visibility="gone" />
+</LinearLayout>

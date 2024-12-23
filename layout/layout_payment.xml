@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/CollectDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chọn ngày thu"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tra cứu" />
+
+    <EditText
+        android:id="@+id/ElectricityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/WaterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số nước"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/DebtTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền còn nợ: 0.0"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính tiền" />
+
+    <TextView
+        android:id="@+id/TotalPaymentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền phải trả: 0.0"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/SendInvoiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi hóa đơn" />
+
+    <EditText
+        android:id="@+id/PaidInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền đã trả" />
+
+    <Button
+        android:id="@+id/ConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trở về" />
+
+</LinearLayout>

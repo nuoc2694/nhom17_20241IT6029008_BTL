@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roomDetailsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Các TextView hiện có -->
+    <TextView
+        android:id="@+id/contractDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin hợp đồng"
+        android:textSize="16sp" />
+
+    <!-- TextView để hiển thị số ngày còn lại -->
+    <TextView
+        android:id="@+id/remainingDaysTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số ngày còn lại: "
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/renewRentDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số tháng gia hạn thêm"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        />
+    <!-- Nút gia hạn hợp đồng -->
+    <Button
+        android:id="@+id/renewContractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gia hạn hợp đồng"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nút hủy hợp đồng -->
+    <Button
+        android:id="@+id/cancelContractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hủy hợp đồng"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trở về"
+        android:layout_marginTop="8dp"
+        />
+    <!-- ListView hiện có -->
+    <ListView
+        android:id="@+id/paymentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
